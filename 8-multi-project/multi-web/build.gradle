@@ -3,6 +3,9 @@ allprojects {
     repositories {
         mavenCentral()
     }
+    task allTask {
+        println project.name
+    }
 }
 
 subprojects {

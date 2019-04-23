@@ -1,0 +1,38 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : multi-web : multi-web-war.war (exploded)">
+    <output-path>$PROJECT_DIR$/multi-web-war/build/libs/exploded/multi-web-war.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/multi-web-war/build/libs/exploded/multi-web-war.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="multi-web.multi-web-war.main/web/Web Gradle : multi-web-war.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="multi-web.multi-web-war.main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/multi-web-war/out/production/resources" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Gradle: org.springframework:spring-webmvc:3.2.2.RELEASE" />
+          <element id="archive" name="multi-web-multi-web-multi-web.jar">
+            <element id="module-output" name="multi-web.multi-web.main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/multi-web/out/production/resources" />
+          </element>
+          <element id="library" level="project" name="Gradle: org.springframework:spring-web:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-context:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: javax.servlet:servlet-api:2.5" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-aop:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-beans:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-expression:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: org.springframework:spring-core:3.2.2.RELEASE" />
+          <element id="library" level="project" name="Gradle: commons-logging:commons-logging:1.1.1" />
+          <element id="library" level="project" name="Gradle: aopalliance:aopalliance:1.0" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

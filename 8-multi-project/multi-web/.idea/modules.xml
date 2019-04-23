@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/multi-web.iml" filepath="$PROJECT_DIR$/multi-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/multi-web/multi-web.multi-web.iml" filepath="$PROJECT_DIR$/.idea/modules/multi-web/multi-web.multi-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/multi-web-war/multi-web.multi-web-war.iml" filepath="$PROJECT_DIR$/.idea/modules/multi-web-war/multi-web.multi-web-war.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/multi-web-war/multi-web.multi-web-war.main.iml" filepath="$PROJECT_DIR$/.idea/modules/multi-web-war/multi-web.multi-web-war.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/multi-web-war/multi-web.multi-web-war.test.iml" filepath="$PROJECT_DIR$/.idea/modules/multi-web-war/multi-web.multi-web-war.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/multi-web/multi-web.multi-web.main.iml" filepath="$PROJECT_DIR$/.idea/modules/multi-web/multi-web.multi-web.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/multi-web/multi-web.multi-web.test.iml" filepath="$PROJECT_DIR$/.idea/modules/multi-web/multi-web.multi-web.test.iml" />
+    </modules>
+  </component>
+</project>

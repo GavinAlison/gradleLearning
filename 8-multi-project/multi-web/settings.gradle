@@ -1,1 +1,3 @@
-include 'multi-web', 'multi-web-war'
+rootProject.name = 'multi-web'
+include 'multi-web'
+include 'multi-web-war'

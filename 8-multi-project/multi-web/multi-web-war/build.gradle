@@ -1,8 +1,19 @@
 apply plugin: 'war'
-apply plugin: 'jetty'
 
 dependencies {
     compile 'org.springframework:spring-webmvc:3.2.2.RELEASE'
     runtime 'javax.servlet:servlet-api:2.5'
     compile project(':multi-web')
 }
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "gradle.plugin.org.akhikhl.gretty:gretty:2.0.0"
+    }
+}
+
+apply plugin: "org.akhikhl.gretty"
