@@ -1,0 +1,88 @@
+task h1 {
+	println "11"
+}
+
+
+task printVersion {
+    doFirst {
+        println "Before reading the project version"
+    }
+    doLast {
+        println "Version: $version"
+    }
+}
+/**先添加的doFirst动作后执行，先添加的doLast动作先执行*/
+printVersion.doFirst { println "Second action" }
+printVersion.doFirst { println "First action" }
+printVersion.doLast { println "Not Last action" }
+printVersion.doLast { println "Last action" }
+
+
+
+version = '0.1-SNAPSHOT'
+task first {
+    doLast {
+        println "first"
+    }
+}
+task second {
+    doLast {
+        println "second"
+    }
+}
+/**指定多个task依赖*/
+task printVersion2(dependsOn: [second, first]) {
+    doLast {
+        println "Version: $version"
+    }
+}
+
+task third {
+    doLast {
+        println "third"
+    }
+}
+/**dependsOn 添加任务之间的依赖，声明依赖时直接按名称引用task，被依赖的任务要先被执行*/
+third.dependsOn('printVersion2')     
+
+
+
+
+task showTasks {
+//class org.gradle.api.internal.tasks.DefaultTaskContainer_Decorated task的容器类
+	println tasks.class
+	println tasks.size()
+}
+
+
+tasks.create(name: 'qq') {
+	println 'qq'
+}
+
+
+//dependsOn
+task q1(dependsOn: [qq, first]) {
+	println 'q1'
+}
+
+task q2{ 
+	println 'q2'
+}
+q2.dependsOn first
+
+
+///////////////////////////////////////
+task h9 {
+	asd = 'desc'
+	println asd
+	println description
+}
+
+h9.configure {
+// 后赋值不行
+	description = 'hahahahha'
+}
+
+
+
+

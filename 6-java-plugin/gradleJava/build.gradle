@@ -1,0 +1,42 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+
+group 'com.alison'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile 'easymock:easymock:2.0'
+    compile 'org.slf4j:slf4j-log4j12:1.7.2'
+
+}
+
+sourceSets {
+    api
+    main {
+        java {
+            srcDir 'java-sources'
+        }
+        resources {
+            srcDir  'resources'
+        }
+    }
+}
+
+sourceSets {
+    main {
+        compileClasspath = compileClasspath + files(api.output.classesDirs)
+    }
+    test {
+        runtimeClasspath = runtimeClasspath + files(api.output.classesDirs)
+    }
+}
+
+classes.dependsOn apiClasses
