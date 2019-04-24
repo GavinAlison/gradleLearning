@@ -2,10 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
-      <module name="multi-web.multi-web-war.main" target="1.6" />
-      <module name="multi-web.multi-web-war.test" target="1.6" />
-      <module name="multi-web.multi-web.main" target="1.6" />
-      <module name="multi-web.multi-web.test" target="1.6" />
+      <module name="8-multi-project.multi-web.multi-web-war.main" target="1.8" />
+      <module name="8-multi-project.multi-web.multi-web-war.test" target="1.8" />
+      <module name="8-multi-project.multi-web.multi-web.main" target="1.8" />
+      <module name="8-multi-project.multi-web.multi-web.test" target="1.8" />
+      <module name="gradle1.8-multi-project.multi-web.multi-web-war.main" target="1.8" />
+      <module name="gradle1.8-multi-project.multi-web.multi-web-war.test" target="1.8" />
+      <module name="gradle1.8-multi-project.multi-web.multi-web.main" target="1.8" />
+      <module name="gradle1.8-multi-project.multi-web.multi-web.test" target="1.8" />
+      <module name="multi-web.multi-web-war.main" target="8" />
+      <module name="multi-web.multi-web-war.test" target="8" />
+      <module name="multi-web.multi-web.main" target="8" />
+      <module name="multi-web.multi-web.test" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

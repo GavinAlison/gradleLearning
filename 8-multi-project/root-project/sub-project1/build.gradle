@@ -1,10 +1,10 @@
 //project 1
 
-task taskA << {
+task taskA  {
     println 'this is taskA from project 1'
 }
 
-task taskB << {
+task taskB  {
     println 'this is taskB from project 1'
 }
 

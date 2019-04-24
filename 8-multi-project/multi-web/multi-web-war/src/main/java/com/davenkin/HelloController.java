@@ -1,4 +1,4 @@
-package davenkin;
+package com.davenkin;
 
 
 import org.springframework.stereotype.Controller;
@@ -10,12 +10,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/welcome")
 public class HelloController {
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET, value="/1")
     public String printWelcome(ModelMap model) {
-
         model.addAttribute("message", new HelloWorld().sayHello());
         return "hello";
-
     }
 
 }

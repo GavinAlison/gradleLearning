@@ -6,6 +6,12 @@ target
 *.ipr
 *.iws
 build
+multi-web/build/
+multi-web-war/build/
+.idea
+.idea/**/*.xml
+
+
 out
 .gradle
 .gradle/**

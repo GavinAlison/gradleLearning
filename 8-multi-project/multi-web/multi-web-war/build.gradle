@@ -1,7 +1,7 @@
 apply plugin: 'war'
 
 dependencies {
-    compile 'org.springframework:spring-webmvc:3.2.2.RELEASE'
+    compile 'org.springframework:spring-webmvc:4.2.1.RELEASE'
     runtime 'javax.servlet:servlet-api:2.5'
     compile project(':multi-web')
 }
@@ -17,3 +17,12 @@ buildscript {
 }
 
 apply plugin: "org.akhikhl.gretty"
+
+
+//jettyRun {
+//    reload = "automatic"
+//    scanIntervalSeconds = 1
+//    httpPort = 8079
+//    stopPort = 8088
+//    stopKey = "stop"
+//}
