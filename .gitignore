@@ -13,6 +13,10 @@ build
 out
 target
 .gradle
+*/**/.gradle
+*/**/.gradle/
+*/.gradle
+*/.gradle/
 wrapper
 gradlew
 gradlew.bat
